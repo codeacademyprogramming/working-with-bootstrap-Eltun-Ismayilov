@@ -1,0 +1,43 @@
+.contact{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position:center;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-signup.jpg);
+  &_p{
+      font-size: 35px;
+      color: white;
+      margin-left: 33%;
+      @include respons(phone){
+          margin-left: 180px;
+      }
+  }
+  &_input{
+      width: 480px;
+      height: 60px;
+      margin-left: 25%;
+      letter-spacing: 2px;
+      padding-left: 20px;
+      border-radius: 5px;
+      border: none;
+      @include respons(phone){
+          margin-left: 80px;
+      }
+   
+  }
+
+  &_button{
+    width: 150px;
+    height: 60px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    color: silver;
+    background-color: #64a19d;
+    opacity: 0.6;
+  }
+
+  @include respons (phone){
+      margin-top: 160%;
+  }
+}

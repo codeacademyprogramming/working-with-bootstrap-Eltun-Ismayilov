@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include respons(phone){
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+}
+
+.logo{
+    color: white;
+    font-size: 24px;
+    line-height: 80px;
+    padding: 0px 190px;
+    font-weight: bold;
+    color: black;
+    @include respons(phone){
+        margin-left: -140px;
+    }
+  
+}
+
+nav ul{
+    float: right;
+    margin-right: 200px;
+    @include respons(phone){
+        position: fixed;
+        width: 100%;
+        top: -100%;
+        left: 0;
+        text-align: left;
+        transition: all .5s;
+        background-color: white;
+    }
+
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    @include respons(phone){
+        display: block;
+        line-height: 40px;
+    }
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    @include respons(phone){
+        font-size: 17px;
+        color: silver;
+    }
+}
+
+a:hover{
+    color: #1b9bff;
+    transition: .5s;
+    @include respons(phone){
+        background-color: none;
+        color: #0082e6;
+    }
+}
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    @include respons(phone){
+        display: block;
+    }
+}
+
+#check{
+    display: none;
+}
+  
+    #check:checked ~ ul{
+        top: 80px;
+        @include respons(phone);
+     }
+
+
+
+
