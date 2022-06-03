@@ -1,0 +1,10 @@
+@mixin respons($breakpoint) {
+    @media screen  and (max-width:800px){
+        @if  $breakpoint==phone {
+            @content;
+            
+        }
+    }
+    
+  
+}
